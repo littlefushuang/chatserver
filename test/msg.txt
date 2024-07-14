@@ -1,0 +1,9 @@
+//登录
+{"msgid":1,"id":22,"password":"123456"}
+{"msgid":1,"id":13,"password":"123456"}
+
+//聊天信息
+{"msgid":5,"id":22,"from":"fushuang","toid":13,"msg":"hello world!"}
+
+//添加好友
+{"msgid":6,"id":22,"friendid":13}

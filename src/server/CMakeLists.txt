@@ -1,0 +1,10 @@
+aux_source_directory(. SRC_LIST)
+aux_source_directory(./db DB_LIST)
+aux_source_directory(./model MODEL_LIST)
+aux_source_directory(./redis REDIS_LIST)
+#设置可执行文件存储路径
+include_directories(/www/server/mysql/include)
+
+add_executable(ChatServer ${SRC_LIST} ${DB_LIST} ${MODEL_LIST} ${REDIS_LIST})
+#依赖库文件
+target_link_libraries(ChatServer muduo_net muduo_base pthread hiredis /www/server/mysql/lib/libmysqlclient.so)
