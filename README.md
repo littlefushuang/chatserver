@@ -1,0 +1,2 @@
+# chatserver
+这是一个可以工作在nginx tcp负载均衡条件中的集群通讯服务器和客户端源码，该源码基于muduo网络库实现，用到redis、mysql
